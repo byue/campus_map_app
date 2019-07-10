@@ -1,0 +1,151 @@
+Menu:
+r to find a route
+b to see a list of all buildings
+q to quit
+
+Enter an option ('m' to see the menu): Buildings:
+BAG: Bagley Hall (East Entrance)
+BAG (NE): Bagley Hall (Northeast Entrance)
+BGR: By George
+CHL: Chemistry Library (West Entrance)
+CHL (NE): Chemistry Library (Northeast Entrance)
+CHL (SE): Chemistry Library (Southeast Entrance)
+CMU: Communications Building
+CSE: Paul G. Allen Center for Computer Science & Engineering
+DEN: Denny Hall
+EEB: Electrical Engineering Building (North Entrance)
+EEB (S): Electrical Engineering Building (South Entrance)
+FSH: Fishery Sciences Building
+GWN: Gowen Hall
+HUB: Student Union Building (Main Entrance)
+HUB (Food, S): Student Union Building (South Food Entrance)
+HUB (Food, W): Student Union Building (West Food Entrance)
+IMA: Intramural Activities Building
+KNE: Kane Hall (North Entrance)
+KNE (E): Kane Hall (East Entrance)
+KNE (S): Kane Hall (South Entrance)
+KNE (SE): Kane Hall (Southeast Entrance)
+KNE (SW): Kane Hall (Southwest Entrance)
+LOW: Loew Hall
+MCC: McCarty Hall (Main Entrance)
+MCC (S): McCarty Hall (South Entrance)
+MCM: McMahon Hall (Northwest Entrance)
+MCM (SW): McMahon Hall (Southwest Entrance)
+MGH: Mary Gates Hall (North Entrance)
+MGH (E): Mary Gates Hall (East Entrance)
+MGH (S): Mary Gates Hall (South Entrance)
+MGH (SW): Mary Gates Hall (Southwest Entrance)
+MLR: Miller Hall
+MNY: Meany Hall (Northeast Entrance)
+MNY (NW): Meany Hall (Northwest Entrance)
+MOR: Moore Hall
+MUS: Music Building (Northwest Entrance)
+MUS (E): Music Building (East Entrance)
+MUS (S): Music Building (South Entrance)
+MUS (SW): Music Building (Southwest Entrance)
+OUG: Odegaard Undergraduate Library
+PAA: Physics/Astronomy Building A
+PAB: Physics/Astronomy Building
+PAR: Parrington Hall
+RAI: Raitt Hall (West Entrance)
+RAI (E): Raitt Hall (East Entrance)
+ROB: Roberts Hall
+SAV: Savery Hall
+SUZ: Suzzallo Library
+T65: Thai 65
+UBS: University Bookstore
+UBS (Secret): University Bookstore (Secret Entrance)
+
+Enter an option ('m' to see the menu): Abbreviated name of starting building: Abbreviated name of ending building: Unknown building: werf
+
+Enter an option ('m' to see the menu): Unknown option
+
+Enter an option ('m' to see the menu): Menu:
+r to find a route
+b to see a list of all buildings
+q to quit
+
+Enter an option ('m' to see the menu): Abbreviated name of starting building: Abbreviated name of ending building: Unknown building: ASDS
+Unknown building: TGEHETH
+
+Enter an option ('m' to see the menu): Abbreviated name of starting building: Abbreviated name of ending building: Unknown building: SDFSDF
+
+Enter an option ('m' to see the menu): Abbreviated name of starting building: Abbreviated name of ending building: Path from Odegaard Undergraduate Library to Music Building (Northwest Entrance):
+Walk 63 feet E to (1754, 1207)
+Walk 70 feet E to (1787, 1219)
+Walk 57 feet SE to (1813, 1230)
+Walk 50 feet SE to (1835, 1241)
+Walk 111 feet E to (1886, 1259)
+Walk 72 feet NE to (1901, 1228)
+Walk 88 feet NE to (1930, 1198)
+Walk 78 feet NE to (1960, 1171)
+Walk 25 feet NE to (1971, 1161)
+Walk 67 feet NE to (1994, 1139)
+Walk 58 feet NE to (2015, 1118)
+Walk 144 feet NE to (2066, 1068)
+Walk 129 feet NE to (2111, 1023)
+Walk 72 feet NE to (2136, 997)
+Walk 60 feet NE to (2158, 977)
+Walk 83 feet NE to (2187, 950)
+Walk 36 feet SE to (2203, 957)
+Total distance: 1265 feet
+
+Enter an option ('m' to see the menu): Buildings:
+BAG: Bagley Hall (East Entrance)
+BAG (NE): Bagley Hall (Northeast Entrance)
+BGR: By George
+CHL: Chemistry Library (West Entrance)
+CHL (NE): Chemistry Library (Northeast Entrance)
+CHL (SE): Chemistry Library (Southeast Entrance)
+CMU: Communications Building
+CSE: Paul G. Allen Center for Computer Science & Engineering
+DEN: Denny Hall
+EEB: Electrical Engineering Building (North Entrance)
+EEB (S): Electrical Engineering Building (South Entrance)
+FSH: Fishery Sciences Building
+GWN: Gowen Hall
+HUB: Student Union Building (Main Entrance)
+HUB (Food, S): Student Union Building (South Food Entrance)
+HUB (Food, W): Student Union Building (West Food Entrance)
+IMA: Intramural Activities Building
+KNE: Kane Hall (North Entrance)
+KNE (E): Kane Hall (East Entrance)
+KNE (S): Kane Hall (South Entrance)
+KNE (SE): Kane Hall (Southeast Entrance)
+KNE (SW): Kane Hall (Southwest Entrance)
+LOW: Loew Hall
+MCC: McCarty Hall (Main Entrance)
+MCC (S): McCarty Hall (South Entrance)
+MCM: McMahon Hall (Northwest Entrance)
+MCM (SW): McMahon Hall (Southwest Entrance)
+MGH: Mary Gates Hall (North Entrance)
+MGH (E): Mary Gates Hall (East Entrance)
+MGH (S): Mary Gates Hall (South Entrance)
+MGH (SW): Mary Gates Hall (Southwest Entrance)
+MLR: Miller Hall
+MNY: Meany Hall (Northeast Entrance)
+MNY (NW): Meany Hall (Northwest Entrance)
+MOR: Moore Hall
+MUS: Music Building (Northwest Entrance)
+MUS (E): Music Building (East Entrance)
+MUS (S): Music Building (South Entrance)
+MUS (SW): Music Building (Southwest Entrance)
+OUG: Odegaard Undergraduate Library
+PAA: Physics/Astronomy Building A
+PAB: Physics/Astronomy Building
+PAR: Parrington Hall
+RAI: Raitt Hall (West Entrance)
+RAI (E): Raitt Hall (East Entrance)
+ROB: Roberts Hall
+SAV: Savery Hall
+SUZ: Suzzallo Library
+T65: Thai 65
+UBS: University Bookstore
+UBS (Secret): University Bookstore (Secret Entrance)
+
+Enter an option ('m' to see the menu): Menu:
+r to find a route
+b to see a list of all buildings
+q to quit
+
+Enter an option ('m' to see the menu):

@@ -1,0 +1,19 @@
+# Tests that a graph can be created, and 9 nodes
+# can be added to the graph. 
+
+# Create a graph
+CreateGraph graph1
+
+# Add 9 nodes
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+AddNode graph1 n4
+AddNode graph1 n5
+AddNode graph1 n6
+AddNode graph1 n7
+AddNode graph1 n8
+AddNode graph1 n9
+
+# Print the nodes in the graph
+ListNodes graph1

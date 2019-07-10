@@ -1,0 +1,8 @@
+# Simple test of Djikstra's algorithm.
+# Verifies output of DJK for size 1 graph.
+
+created graph g
+
+added node a to g
+
+unknown character b

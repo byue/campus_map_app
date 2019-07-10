@@ -1,0 +1,29 @@
+# Tests that a cyclic graph of 5 nodes can be constructed.
+
+# Create a graph
+created graph graph1
+
+# Add 5 nodes
+added node n1 to graph1
+added node n2 to graph1
+added node n3 to graph1
+added node n4 to graph1
+added node n5 to graph1
+
+# Connect nodes in a linear chain
+added edge a from n1 to n2 in graph1
+added edge b from n2 to n3 in graph1
+added edge c from n3 to n4 in graph1
+added edge d from n4 to n1 in graph1
+added edge e from n4 to n2 in graph1
+added edge f from n3 to n5 in graph1
+
+# list nodes of graph
+graph1 contains: n1 n2 n3 n4 n5
+
+# list children of each node
+the children of n1 in graph1 are: n2(a)
+the children of n2 in graph1 are: n3(b)
+the children of n3 in graph1 are: n4(c) n5(f)
+the children of n4 in graph1 are: n1(d) n2(e)
+the children of n5 in graph1 are:

@@ -1,0 +1,14 @@
+# Tests that duplicate nodes are not inserted into the graph
+
+# Create a graph
+CreateGraph graph1
+
+# Add 5 nodes including 2 duplicates
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+AddNode graph1 n1
+AddNode graph1 n2
+
+# list nodes of graph
+ListNodes graph1

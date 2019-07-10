@@ -1,0 +1,16 @@
+# Simple test of Djikstra's algorithm.
+# Verifies output of DJK for size 3 connected triangle graph.
+# Third connection has a lower weight than the first 2.
+
+CreateGraph g
+
+AddNode g a
+AddNode g b
+AddNode g c
+AddNode g d
+
+AddEdge g a b 3.512442
+AddEdge g b c 2.41
+AddEdge g a c 0.987
+
+FindPath g a c

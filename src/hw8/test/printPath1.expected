@@ -1,0 +1,34 @@
+Menu:
+r to find a route
+b to see a list of all buildings
+q to quit
+
+Enter an option ('m' to see the menu): # Verify that the program correctly prints the path
+Abbreviated name of starting building: Abbreviated name of ending building: Path from Mary Gates Hall (North Entrance) to Music Building (Northwest Entrance):
+Walk 37 feet N to (1967, 1417)
+Walk 97 feet NE to (2008, 1398)
+Walk 85 feet NE to (2046, 1380)
+Walk 186 feet E to (2129, 1347)
+Walk 77 feet N to (2127, 1311)
+Walk 49 feet N to (2124, 1288)
+Walk 54 feet N to (2115, 1263)
+Walk 40 feet N to (2116, 1245)
+Walk 38 feet NE to (2123, 1230)
+Walk 39 feet NE to (2136, 1216)
+Walk 27 feet N to (2134, 1205)
+Walk 44 feet NE to (2149, 1192)
+Walk 66 feet NE to (2172, 1172)
+Walk 39 feet NW to (2158, 1160)
+Walk 44 feet NW to (2143, 1145)
+Walk 32 feet NW to (2132, 1134)
+Walk 25 feet NW to (2123, 1127)
+Walk 80 feet NW to (2098, 1098)
+Walk 34 feet NE to (2108, 1085)
+Walk 123 feet N to (2111, 1023)
+Walk 72 feet NE to (2136, 997)
+Walk 60 feet NE to (2158, 977)
+Walk 83 feet NE to (2187, 950)
+Walk 36 feet SE to (2203, 957)
+Total distance: 1468 feet
+
+Enter an option ('m' to see the menu):

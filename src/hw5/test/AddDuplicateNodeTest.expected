@@ -1,0 +1,14 @@
+# Tests that duplicate nodes are not inserted into the graph
+
+# Create a graph
+created graph graph1
+
+# Add 5 nodes including 2 duplicates
+added node n1 to graph1
+added node n2 to graph1
+added node n3 to graph1
+graph1 already contains node n1
+graph1 already contains node n2
+
+# list nodes of graph
+graph1 contains: n1 n2 n3

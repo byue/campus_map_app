@@ -1,0 +1,8 @@
+# Tests that a graph can be created, and proper output
+# for adding to a null graph.
+
+# Create a graph
+created graph graph1
+
+# Add node to a null graph
+graph2 has not been created

@@ -1,0 +1,5 @@
+# test parser on a graph with 2 nodes triply connected
+
+LoadGraph heroes data2d.tsv
+ListChildren heroes a
+FindPath heroes a b

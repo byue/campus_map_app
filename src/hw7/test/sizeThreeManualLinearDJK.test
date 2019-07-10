@@ -1,0 +1,13 @@
+# Simple test of Djikstra's algorithm.
+# Verifies output of DJK for size 3 connected linear graph.
+
+CreateGraph g
+
+AddNode g a
+AddNode g b
+AddNode g c
+
+AddEdge g a b 3.512442
+AddEdge g b c 2.41
+
+FindPath g a c

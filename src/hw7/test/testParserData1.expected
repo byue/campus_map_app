@@ -1,0 +1,5 @@
+# test parser on a graph with 1 node
+
+loaded graph heroes
+the children of a in heroes are:
+unknown character b

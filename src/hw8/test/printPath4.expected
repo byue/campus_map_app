@@ -1,0 +1,130 @@
+Menu:
+r to find a route
+b to see a list of all buildings
+q to quit
+
+Enter an option ('m' to see the menu): Abbreviated name of starting building: Abbreviated name of ending building: Path from Mary Gates Hall (North Entrance) to Paul G. Allen Center for Computer Science & Engineering:
+Walk 37 feet N to (1967, 1417)
+Walk 97 feet NE to (2008, 1398)
+Walk 183 feet SE to (2047, 1477)
+Walk 37 feet NE to (2062, 1468)
+Walk 30 feet SE to (2071, 1480)
+Walk 49 feet S to (2078, 1502)
+Walk 26 feet SE to (2083, 1514)
+Walk 84 feet SE to (2101, 1551)
+Walk 140 feet S to (2126, 1613)
+Walk 140 feet SE to (2157, 1675)
+Walk 134 feet E to (2218, 1696)
+Walk 90 feet E to (2261, 1707)
+Walk 18 feet S to (2260, 1716)
+Total distance: 1065 feet
+
+Enter an option ('m' to see the menu): Abbreviated name of starting building: Abbreviated name of ending building: Path from Physics/Astronomy Building to Paul G. Allen Center for Computer Science & Engineering:
+Walk 35 feet N to (1561, 1682)
+Walk 51 feet E to (1586, 1678)
+Walk 166 feet E to (1666, 1677)
+Walk 43 feet N to (1666, 1656)
+Walk 22 feet E to (1676, 1655)
+Walk 43 feet S to (1677, 1676)
+Walk 141 feet S to (1675, 1743)
+Walk 35 feet E to (1691, 1737)
+Walk 27 feet NE to (1703, 1731)
+Walk 72 feet E to (1737, 1740)
+Walk 27 feet NE to (1749, 1733)
+Walk 59 feet S to (1759, 1760)
+Walk 41 feet S to (1766, 1779)
+Walk 79 feet E to (1801, 1765)
+Walk 45 feet NE to (1821, 1756)
+Walk 136 feet SE to (1852, 1813)
+Walk 84 feet NE to (1889, 1797)
+Walk 151 feet NE to (1952, 1766)
+Walk 103 feet NE to (1996, 1743)
+Walk 134 feet NE to (2055, 1718)
+Walk 21 feet E to (2067, 1714)
+Walk 200 feet NE to (2157, 1675)
+Walk 134 feet E to (2218, 1696)
+Walk 90 feet E to (2261, 1707)
+Walk 18 feet S to (2260, 1716)
+Total distance: 1957 feet
+
+Enter an option ('m' to see the menu): Abbreviated name of starting building: Abbreviated name of ending building: Path from Kane Hall (North Entrance) to Chemistry Library (West Entrance):
+Walk 27 feet NE to (1890, 1159)
+Walk 117 feet SE to (1930, 1198)
+Walk 88 feet SW to (1901, 1228)
+Walk 72 feet SW to (1886, 1259)
+Walk 417 feet SW to (1732, 1387)
+Walk 58 feet S to (1733, 1415)
+Walk 47 feet S to (1727, 1437)
+Walk 72 feet SW to (1700, 1457)
+Walk 58 feet S to (1700, 1485)
+Walk 100 feet S to (1696, 1531)
+Walk 33 feet S to (1695, 1548)
+Walk 72 feet S to (1695, 1582)
+Walk 75 feet S to (1695, 1618)
+Walk 32 feet S to (1694, 1633)
+Walk 80 feet S to (1698, 1672)
+Walk 18 feet E to (1708, 1672)
+Total distance: 1366 feet
+
+Enter an option ('m' to see the menu): Menu:
+r to find a route
+b to see a list of all buildings
+q to quit
+
+Enter an option ('m' to see the menu): Buildings:
+BAG: Bagley Hall (East Entrance)
+BAG (NE): Bagley Hall (Northeast Entrance)
+BGR: By George
+CHL: Chemistry Library (West Entrance)
+CHL (NE): Chemistry Library (Northeast Entrance)
+CHL (SE): Chemistry Library (Southeast Entrance)
+CMU: Communications Building
+CSE: Paul G. Allen Center for Computer Science & Engineering
+DEN: Denny Hall
+EEB: Electrical Engineering Building (North Entrance)
+EEB (S): Electrical Engineering Building (South Entrance)
+FSH: Fishery Sciences Building
+GWN: Gowen Hall
+HUB: Student Union Building (Main Entrance)
+HUB (Food, S): Student Union Building (South Food Entrance)
+HUB (Food, W): Student Union Building (West Food Entrance)
+IMA: Intramural Activities Building
+KNE: Kane Hall (North Entrance)
+KNE (E): Kane Hall (East Entrance)
+KNE (S): Kane Hall (South Entrance)
+KNE (SE): Kane Hall (Southeast Entrance)
+KNE (SW): Kane Hall (Southwest Entrance)
+LOW: Loew Hall
+MCC: McCarty Hall (Main Entrance)
+MCC (S): McCarty Hall (South Entrance)
+MCM: McMahon Hall (Northwest Entrance)
+MCM (SW): McMahon Hall (Southwest Entrance)
+MGH: Mary Gates Hall (North Entrance)
+MGH (E): Mary Gates Hall (East Entrance)
+MGH (S): Mary Gates Hall (South Entrance)
+MGH (SW): Mary Gates Hall (Southwest Entrance)
+MLR: Miller Hall
+MNY: Meany Hall (Northeast Entrance)
+MNY (NW): Meany Hall (Northwest Entrance)
+MOR: Moore Hall
+MUS: Music Building (Northwest Entrance)
+MUS (E): Music Building (East Entrance)
+MUS (S): Music Building (South Entrance)
+MUS (SW): Music Building (Southwest Entrance)
+OUG: Odegaard Undergraduate Library
+PAA: Physics/Astronomy Building A
+PAB: Physics/Astronomy Building
+PAR: Parrington Hall
+RAI: Raitt Hall (West Entrance)
+RAI (E): Raitt Hall (East Entrance)
+ROB: Roberts Hall
+SAV: Savery Hall
+SUZ: Suzzallo Library
+T65: Thai 65
+UBS: University Bookstore
+UBS (Secret): University Bookstore (Secret Entrance)
+
+Enter an option ('m' to see the menu): Abbreviated name of starting building: Abbreviated name of ending building: Path from Kane Hall (North Entrance) to Kane Hall (North Entrance):
+Total distance: 0 feet
+
+Enter an option ('m' to see the menu):

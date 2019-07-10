@@ -1,0 +1,147 @@
+CSE 331 Homework 5.  Answers to Written questions.
+Edit this file to supply your answers.
+
+Name:  Bryan Yue
+
+Problem 1. (Written exercises)
+
+(a)
+1.
+Abstraction Function: 
+	The Nth element from the front of the queue = entries.get(N - 1)
+    where the 1st element is at the front. queue = [] if there are no elements.
+Rep Invariant:
+    entries != null and for any index i such that 0 <= i < size, entries.get(i) != null
+2.
+Abstraction Function: 
+	The Nth element from the front of the queue = entries[(front + N - 1) % entries.length]
+    where the 1st element is at the front. queue = [] if there are no elements.
+Rep Invariant:
+    For any index i such that front <= i < (front + size) % entries.length, entries[i] != null
+    size > -1, entries != null
+
+(b)
+a: 1, 2
+b: 2, 3, 4
+c: 1, 2, 3
+d: 1, 2
+e: 1, 2, 3, 4
+f: 1, 2, 3
+g: 1, 2
+h: 2, 3, 4
+From the client's perspective, a/d/g are equivalent, b/h are equivalent, c/f are equivalent, and e is 
+not equivalent to any other snapshot. 
+
+(c)
+1. public int solveEquations(int x, int y, int z)
+The method cannot expose representation, since the method is just passed int, and returns an int. Thus,
+no references to objects are returned back to the caller, so the client cannot manipulate the representation.
+
+2. public String[] decode(boolean slowly)
+This method can expose representation, assuming it returns a string array that is a field in the object.
+Although strings are immutable, the array is mutable, and the client code can easily change the contents
+of the array. 
+
+3. private Date myBirthday()
+This method does not expose representation to the client code since the client cannot call this method.
+This is a private method. 
+
+4. public String toString()
+This method does not expose representation to the client code since a String is returned,
+and Strings are immutable. 
+
+5. public Iterator<Integer> elements()
+This method could expose representation to the client code since the iterator returns elements
+in a collection. If the elements are mutable, the client code could access the elements and possibly
+alter the data, assuming clients had access to the element contents or methods to alter the contents.
+
+6. public Deck(List<Card> cards)
+This method could expose representation to the client code, assuming that an object field points to the
+same object as the card list. If the client modifies the card list, the client would also be modifying the
+state of the object.
+
+Problem 2.  (Graph interface/operations)
+In my package I have 3 classes: a labeled edge class, a graph class, and an edge container class nested in the
+graph class. I separated LabeledEdge into a separate class since edges are a separate entity from nodes.
+In my edge class I had 3 methods to retrieve the edge label, and the source/destination graph nodes. I also added
+equals() and hashcode() since the edges will be stored in a hashset, so I will need comparisons 
+to see if the edge is already in the hash set. The edge class does not need to perform computation and is there to hold data for easy access. 
+
+In my AllEdges class I have two methods to get inner edges and get outer edges. I made a design decision
+to return the set containing the edges directly instead of a copy since the graph class will need
+to modify the contents of the edge sets by adding edges to it. This being said, I needed to be careful
+not to expose to the client these methods, since I do not want the client to mess with the sets containing
+the edges.  
+
+In my Graph class I had a addData method to add nodes to the graph. I decided that the parameter should be a 
+String for the data label since this allows the client to input nodes easily. I also implemented isConnected()
+so that the client can easily check if two nodes are connected in the graph.
+Again, I chose Strings for the parameters for ease of use. I also had a getOutEdges() and getInEdges()
+method to get incoming and outgoing edges for a node. These methods are useful for graph traversals.
+I made the choice of returning the entire edge vs. just returning child nodes since the edge has additional 
+information, the label of the edge, that the client may want to access. I included containsData() to see
+if the graph contains a node of interest. This way the client can check what nodes they added to the graph.
+Similarly, I included a global containsEdge() for the client to see if an edge was in the graph, and
+a local containsEdge() to see if a node has the specified edge, which is useful for graph traversals.
+For the global containsEdge() I used a hashSet to make lookup time O(1) at the cost of space and redundant storage.
+I included getAllNodeData() and getAllEdges() in case the client want to iterate through the edges. The nodes
+and edges are unsorted because I do not know what order the client wants the edges and nodes in. I included
+numEdges(), numInEdges(), numOutEdges(), and numNodes() for the client to monitor the quantity
+of nodes and edges in the graph. This is useful if the client wants to add nodes to the graph until a 
+certain quantity. I originally included a BFS method but took this out since it makes my ADT too specific
+and I do not want to restrict the client to a particular implementation of BFS. BFS search belongs in the client
+code instead. 
+
+Problem 3.  (Testing strategy)
+For JUnit testing I focused heavily of ensuring correctness of specified behavior for my methods.
+For example, since I handled null input by returning false or null in some methods, I tested specifically
+for null input cases since that was handled by my method in my spec. I broke up testing into methods, and for
+each method, I wrote several tests for possible "breaking" scenarios such as inserting duplicate nodes or edges.
+I tested for expected output also. In addition, I wrote several stress tests to see how well my graph performed
+with a lot of data added. This is important since we also care about speed in addition to program
+correctness based on the spec. For methods that returned unmodifiable sets, I tested that attempting to modify the set
+would throw an exception for unmodifiable sets. I had some issues testing the inner class AllEdges in the graph class
+since it is hard to separate the two tests, but decided that getInEdges() and getOutEdges() is sufficient to test for
+the inner class since these methods directly access the data held in AllEdges. My testing strategy centered on ensuring
+correct output based on the spec and testing conditions that would stress my data structure. 
+
+In my specification tests I followed a similar strategy of testing possible edge cases. I also tested incrementally, for example
+no nodes, one node, and multiple nodes, each case further divided into no edges and some edges. I also drew several graphs, wrote the 
+commands that I would expect to make the graph, and compare the correctness of the output. I tested scenarios such as multiple 2 way connections
+between 2 nodes, one way connections, and attempting to add duplicate edges/nodes. I also added code to the test driver to
+account for trying to find children of non-existent nodes. Overall I am confident that I tested thoroughly for program
+correctness. 
+
+Problem 4.  (Representation)
+The first representation is a collection of edges. This has the advantage of being easier to implement,
+and takes up less space than the other two representations. When we are adding nodes we can just connect 
+edges together. However, while simple, this method is not organized. When the number of repeated connections
+and the size of the graph increases, this representation makes the graph harder to traverse through and harder
+to find nodes. 
+
+The adjacency list is more organized and structured. Nodes are connected to children nodes by several linked lists.
+Adding an edge is O(1) for adjacency lists since we can just append to the end of the list. Although searching
+for an edge is O(n), if the data is sparse, lookup time is on average pretty fast. Memory-wise, adjacency lists
+take up less compared to adjacency matrices if the data is sparse, because matrices will have extra 0's.
+Also, initialization is faster with an adjacency matrix since a 2-D array takes longer to setup than several
+linked lists. 
+
+However, if the graph is dense, an adjacency matrix is a better choice since it can pack data better together
+in a 2-D array. When searching for an edge, an adjacency matrix has constant time lookup, so an adjacency matrix
+performs better when the graph is dense. It may be harder to debug an adjacency matrix since you have to pick through
+all the indices of an array. 
+
+My representation was slightly different. I used a hash map to store String, edge object pairs, and 2 sets for in and out edges
+in the edge object for organizational purposes. Each edge stores the edge label, and the labels for connected nodes. 
+While my representation is fast, there are some redundancies since I store edges twice (in a hash set for quick access and in 
+the AllEdge hash sets to partition for different nodes).
+If memory usage becomes an issue, I can tweak the implementation to remove the edge hash set, but this will make
+lookup of edges slower, since I will need to search through every AllEdges hash set. I split the graph into a 
+main graph class, an Alledges inner class, and an edge class to keep organized and less cluttered. 
+This also allowed me to delegate methods where they made more sense, for example retrieving edge label and
+connected node data from the edge object. I had to be careful with exposure of data structures, so I only allowed
+adding nodes and edges from the overall graph class. If I had allowed adding edges from the node class,
+the client could get a node and potentially mess up the graph by adding extra edges, which could violate my class invariant.
+I also only returned unmodifiable sets to the client for their own usage, but chose to return the original sets in my own private
+class so that I could add edges to the sets. I was careful to avoid allowing clients access to the original copy or 
+methods involved with modifying the original sets.

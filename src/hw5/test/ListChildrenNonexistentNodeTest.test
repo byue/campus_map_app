@@ -1,0 +1,7 @@
+# Tests listing children of non-existent node in graph
+
+# Create a graph
+CreateGraph graph1
+
+# List Children of non-existent node
+ListChildren graph1 n1

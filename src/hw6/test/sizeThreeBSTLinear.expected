@@ -1,0 +1,32 @@
+# Simple test of breadth-first search algorithm.
+# Verifies output of BFS for size 3 linear graph.
+
+created graph characters
+added node GORILLA-MAN to characters
+added node HAWK to characters
+added node VENUS-II to characters
+
+added edge COMIC1 from GORILLA-MAN to HAWK in characters
+added edge COMIC2 from HAWK to VENUS-II in characters
+
+path from GORILLA-MAN to HAWK:
+GORILLA-MAN to HAWK via COMIC1
+
+path from HAWK to VENUS-II:
+HAWK to VENUS-II via COMIC2
+
+path from GORILLA-MAN to VENUS-II:
+GORILLA-MAN to HAWK via COMIC1
+HAWK to VENUS-II via COMIC2
+
+path from VENUS-II to GORILLA-MAN:
+no path found
+
+path from VENUS-II to VENUS-II:
+
+unknown character GGGG
+
+unknown character BBBB
+
+unknown character BBBB
+unknown character GGGG

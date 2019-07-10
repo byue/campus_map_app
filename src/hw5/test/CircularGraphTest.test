@@ -1,0 +1,29 @@
+# Tests that a linear graph of 5 nodes can be created,
+# and that each node has only one child.
+
+# Create a graph
+CreateGraph graph1
+
+# Add 5 nodes
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+AddNode graph1 n4
+AddNode graph1 n5
+
+# Connect nodes in a linear chain
+AddEdge graph1 n1 n2 a
+AddEdge graph1 n2 n3 b
+AddEdge graph1 n3 n4 c
+AddEdge graph1 n4 n5 d
+AddEdge graph1 n5 n1 e
+
+# list nodes of graph
+ListNodes graph1
+
+# list children of each node
+ListChildren graph1 n1
+ListChildren graph1 n2
+ListChildren graph1 n3
+ListChildren graph1 n4
+ListChildren graph1 n5

@@ -1,0 +1,29 @@
+# Tests various inputs for the marvel graph. Expected outputs were found by
+# browsing the marvel.tsv data.
+
+loaded graph marvel
+
+path from HOFFMAN to CAPTAIN AMERICA:
+no path found
+
+path from SENTRY IV/VAL to BLURRY:
+SENTRY IV/VAL to ROM, SPACEKNIGHT via SK 1
+ROM, SPACEKNIGHT to ANGEL/WARREN KENNETH via COC 1
+ANGEL/WARREN KENNETH to BANSHEE/SEAN CASSIDY via CX 1
+BANSHEE/SEAN CASSIDY to BLURRY via GENX 40
+
+path from BLURRY to SENTRY IV/VAL:
+BLURRY to ALBERT via GENX 42
+ALBERT to BEAST/HENRY &HANK& P via W2 53
+BEAST/HENRY &HANK& P to ROM, SPACEKNIGHT via COC 1
+ROM, SPACEKNIGHT to SENTRY IV/VAL via SK 1
+
+path from W'KABI to LYNNE, MONICA:
+W'KABI to LYNNE, MONICA via BP3 15
+
+path from CAPTAIN AMERICA to HAWK:
+CAPTAIN AMERICA to HAWK via A '00
+
+path from HAWK to HAWK:
+
+unknown character @#$

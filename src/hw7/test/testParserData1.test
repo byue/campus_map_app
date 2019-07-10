@@ -1,0 +1,5 @@
+# test parser on a graph with 1 node
+
+LoadGraph heroes data1.tsv
+ListChildren heroes a
+FindPath heroes a b

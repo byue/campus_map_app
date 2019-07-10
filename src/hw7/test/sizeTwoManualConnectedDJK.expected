@@ -1,0 +1,13 @@
+# Simple test of Djikstra's algorithm.
+# Verifies output of DJK for size 2 connected graph.
+
+created graph g
+
+added node a to g
+added node b to g
+
+added edge 3.512 from a to b in g
+
+path from a to b:
+a to b with weight 3.512
+total cost: 3.512

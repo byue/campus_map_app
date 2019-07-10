@@ -1,0 +1,6 @@
+# test parser on a graph with 3 nodes.
+# There are two paths with the same weight but one path is of a shorter length.
+
+LoadGraph heroes tiedWeights.tsv
+
+FindPath heroes a c

@@ -1,0 +1,15 @@
+# Tests adding duplicate edge to graph.
+
+# Create a graph
+created graph graph1
+
+# Add 2 nodes
+added node n1 to graph1
+added node n2 to graph1
+
+# add same edge twice
+added edge a from n1 to n2 in graph1
+graph1 already contains the edge
+
+# add a new edge with node arguments reversed
+added edge a from n2 to n1 in graph1

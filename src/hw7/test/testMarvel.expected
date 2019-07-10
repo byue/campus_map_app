@@ -1,0 +1,21 @@
+# Tests various inputs for the marvel graph. Expected outputs were found by
+# browsing the marvel.tsv data and tallying counts of books with a dictionary.
+
+loaded graph marvel
+
+path from HOFFMAN to CAPTAIN AMERICA:
+no path found
+
+path from W'KABI to LYNNE, MONICA:
+W'KABI to BLACK PANTHER/T'CHAL with weight 0.091
+BLACK PANTHER/T'CHAL to LYNNE, MONICA with weight 0.021
+total cost: 0.112
+
+path from CAPTAIN AMERICA to HAWK:
+CAPTAIN AMERICA to HAWK with weight 0.003
+total cost: 0.003
+
+path from HAWK to HAWK:
+total cost: 0.000
+
+unknown character @#$

@@ -1,0 +1,8 @@
+# test parser on a graph with 3 nodes.
+# There are two paths with the same weight but one path is of a shorter length.
+
+loaded graph heroes
+
+path from a to c:
+a to c with weight 0.500
+total cost: 0.500

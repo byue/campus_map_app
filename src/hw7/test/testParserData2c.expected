@@ -1,0 +1,7 @@
+# test parser on a graph with 2 nodes triply connected
+
+loaded graph heroes
+the children of a in heroes are: b(0.333)
+path from a to b:
+a to b with weight 0.333
+total cost: 0.333

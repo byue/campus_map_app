@@ -1,0 +1,21 @@
+# test parser on a graph with 3 linear nodes doubly connected
+
+LoadGraph heroes data3f.tsv
+
+ListChildren heroes a
+ListChildren heroes b
+ListChildren heroes c
+
+FindPath heroes a b
+
+FindPath heroes b c
+
+FindPath heroes a c
+
+AddEdge heroes a c 0.01
+
+ListChildren heroes a
+
+FindPath heroes a c
+
+FindPath heroes a a

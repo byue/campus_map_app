@@ -1,0 +1,14 @@
+# Simple test of breadth-first search algorithm.
+# Verifies output of BFS for size 2 unconnected graph.
+
+CreateGraph characters
+AddNode characters GORILLA-MAN
+AddNode characters HAWK
+
+FindPath characters GORILLA-MAN HAWK
+
+FindPath characters GORILLA-MAN GORILLA-MAN
+
+FindPath characters GORILLA-MAN G32
+
+FindPath characters G31 G32

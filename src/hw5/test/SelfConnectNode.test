@@ -1,0 +1,17 @@
+# Tests that a graph can be created, and a node
+# can be added to the graph with an edge to itself. 
+
+# Create a graph
+CreateGraph graph1
+
+# Add a node
+AddNode graph1 n1
+
+# Connect node to itself
+AddEdge graph1 n1 n1 a
+
+# list nodes of graph
+ListNodes graph1
+
+# list children of node
+ListChildren graph1 n1

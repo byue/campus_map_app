@@ -1,0 +1,20 @@
+# Tests that a graph can be created with 2 nodes
+# that are connected in both directions.
+
+# Create a graph
+CreateGraph graph1
+
+# Add 2 nodes
+AddNode graph1 n1
+AddNode graph1 n2
+
+# Connect nodes in both directions
+AddEdge graph1 n1 n2 a
+AddEdge graph1 n2 n1 b
+
+# list nodes of graph
+ListNodes graph1
+
+# list children of each node
+ListChildren graph1 n1
+ListChildren graph1 n2

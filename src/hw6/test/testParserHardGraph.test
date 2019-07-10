@@ -1,0 +1,21 @@
+# Verifies parser works on complex graph. 
+
+LoadGraph complex hardGraph1.tsv
+
+ListNodes complex
+
+ListChildren complex a
+ListChildren complex b
+ListChildren complex d
+ListChildren complex j
+ListChildren complex e
+ListChildren complex f
+ListChildren complex z
+
+FindPath complex a z
+
+FindPath complex z a
+
+AddNode complex k
+
+FindPath complex a k

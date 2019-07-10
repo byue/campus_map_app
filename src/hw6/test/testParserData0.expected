@@ -1,0 +1,6 @@
+# test parser on a graph with 0 nodes
+
+loaded graph heroes
+nodes are not present in graph
+unknown character a
+unknown character b

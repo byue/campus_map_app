@@ -1,0 +1,18 @@
+# Tests various inputs for the marvel graph. Expected outputs were found by
+# browsing the marvel.tsv data.
+
+LoadGraph marvel marvel.tsv
+
+FindPath marvel HOFFMAN CAPTAIN_AMERICA
+
+FindPath marvel SENTRY_IV/VAL BLURRY
+
+FindPath marvel BLURRY SENTRY_IV/VAL
+
+FindPath marvel W'KABI LYNNE,_MONICA
+
+FindPath marvel CAPTAIN_AMERICA HAWK
+
+FindPath marvel HAWK HAWK
+
+FindPath marvel HAWK @#$

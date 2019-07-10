@@ -1,0 +1,26 @@
+# Simple test of breadth-first search algorithm.
+# Verifies output of BFS for size 3 linear graph.
+
+CreateGraph characters
+AddNode characters GORILLA-MAN
+AddNode characters HAWK
+AddNode characters VENUS-II
+
+AddEdge characters GORILLA-MAN HAWK COMIC1
+AddEdge characters HAWK VENUS-II COMIC2
+
+FindPath characters GORILLA-MAN HAWK
+
+FindPath characters HAWK VENUS-II
+
+FindPath characters GORILLA-MAN VENUS-II
+
+FindPath characters VENUS-II GORILLA-MAN
+
+FindPath characters VENUS-II VENUS-II
+
+FindPath characters VENUS-II GGGG
+
+FindPath characters BBBB VENUS-II
+
+FindPath characters BBBB GGGG

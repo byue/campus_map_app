@@ -1,0 +1,8 @@
+# Simple test of Djikstra's algorithm.
+# Verifies output of DJK for size 1 graph.
+
+CreateGraph g
+
+AddNode g a
+
+FindPath g a b

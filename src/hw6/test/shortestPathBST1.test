@@ -1,0 +1,33 @@
+# Simple test of breadth-first search algorithm.
+# Verifies smallest path can be found on a graph with longer paths,
+# same length paths but with lexicographically different children, and 
+# breaking ties with lexicographically least edge labels. 
+
+CreateGraph g
+
+AddNode g a
+AddNode g b
+AddNode g d
+AddNode g e
+AddNode g j
+AddNode g z
+AddNode g f
+
+AddEdge g a b 7
+AddEdge g a a 19
+AddEdge g b e 5
+AddEdge g b j 8
+AddEdge g b d 6
+AddEdge g d z 1
+AddEdge g d z 2
+AddEdge g j z 9
+AddEdge g e f 4
+AddEdge g f z 3
+
+FindPath g a z
+
+FindPath g b z
+
+FindPath g z a
+
+FindPath g a a

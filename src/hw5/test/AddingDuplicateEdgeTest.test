@@ -1,0 +1,15 @@
+# Tests adding duplicate edge to graph.
+
+# Create a graph
+CreateGraph graph1
+
+# Add 2 nodes
+AddNode graph1 n1
+AddNode graph1 n2
+
+# add same edge twice
+AddEdge graph1 n1 n2 a
+AddEdge graph1 n1 n2 a
+
+# add a new edge with node arguments reversed
+AddEdge graph1 n2 n1 a

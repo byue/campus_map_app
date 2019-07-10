@@ -1,0 +1,20 @@
+# Tests that a graph can be created with 2 nodes
+# that are connected in both directions.
+
+# Create a graph
+created graph graph1
+
+# Add 2 nodes
+added node n1 to graph1
+added node n2 to graph1
+
+# Connect nodes in both directions
+added edge a from n1 to n2 in graph1
+added edge b from n2 to n1 in graph1
+
+# list nodes of graph
+graph1 contains: n1 n2
+
+# list children of each node
+the children of n1 in graph1 are: n2(a)
+the children of n2 in graph1 are: n1(b)

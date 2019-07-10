@@ -1,0 +1,31 @@
+# test parser on a graph with 3 linear nodes doubly connected
+
+loaded graph heroes
+
+the children of a in heroes are: b(0.500)
+the children of b in heroes are: a(0.500) c(0.500)
+the children of c in heroes are: b(0.500)
+
+path from a to b:
+a to b with weight 0.500
+total cost: 0.500
+
+path from b to c:
+b to c with weight 0.500
+total cost: 0.500
+
+path from a to c:
+a to b with weight 0.500
+b to c with weight 0.500
+total cost: 1.000
+
+added edge 0.010 from a to c in heroes
+
+the children of a in heroes are: b(0.500) c(0.010)
+
+path from a to c:
+a to c with weight 0.010
+total cost: 0.010
+
+path from a to a:
+total cost: 0.000

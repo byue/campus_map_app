@@ -1,0 +1,28 @@
+# Verifies parser works on complex graph. 
+
+loaded graph complex
+
+complex contains: a b d e f j z
+
+the children of a in complex are: b(7)
+the children of b in complex are: a(7) d(6) e(5) j(8)
+the children of d in complex are: b(6) z(1) z(2)
+the children of j in complex are: b(8) z(9)
+the children of e in complex are: b(5) f(4)
+the children of f in complex are: e(4) z(3)
+the children of z in complex are: d(1) d(2) f(3) j(9)
+
+path from a to z:
+a to b via 7
+b to d via 6
+d to z via 1
+
+path from z to a:
+z to d via 1
+d to b via 6
+b to a via 7
+
+added node k to complex
+
+path from a to k:
+no path found

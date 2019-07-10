@@ -1,0 +1,18 @@
+# Simple test of Djikstra's algorithm.
+# Verifies output of DJK for size 3 connected triangle graph.
+
+created graph g
+
+added node a to g
+added node b to g
+added node c to g
+added node d to g
+
+added edge 3.512 from a to b in g
+added edge 2.410 from b to c in g
+added edge 9.410 from a to c in g
+
+path from a to c:
+a to b with weight 3.512
+b to c with weight 2.410
+total cost: 5.922

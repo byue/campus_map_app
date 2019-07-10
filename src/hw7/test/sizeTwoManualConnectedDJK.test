@@ -1,0 +1,11 @@
+# Simple test of Djikstra's algorithm.
+# Verifies output of DJK for size 2 connected graph.
+
+CreateGraph g
+
+AddNode g a
+AddNode g b
+
+AddEdge g a b 3.512442
+
+FindPath g a b

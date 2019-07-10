@@ -1,0 +1,4 @@
+# Tests listing children of null graph
+
+# list children of null graph
+ListChildren g1 n1

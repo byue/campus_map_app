@@ -1,0 +1,7 @@
+# Simple test of breadth-first search algorithm.
+# Verifies output of BFS for size 1 graph.
+
+CreateGraph characters
+AddNode characters HAWK
+
+FindPath characters HAWK HAWK

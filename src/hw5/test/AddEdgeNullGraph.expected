@@ -1,0 +1,4 @@
+# Tests that adding an edge to a null graph results in expected output.
+
+# Add edge to null graph
+graph1 has not been created

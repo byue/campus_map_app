@@ -1,0 +1,4 @@
+# Verify that the program correctly prints the start menu
+m
+# All of your test scripts should end with q to terminate the program.
+q

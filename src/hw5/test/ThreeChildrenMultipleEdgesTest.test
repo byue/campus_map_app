@@ -1,0 +1,52 @@
+# Tests that a linear graph of 3 nodes can be created,
+# and that the three nodes can have multiple connections
+# with different labels.
+
+# Create a graph
+CreateGraph graph1
+
+# Add 3 nodes
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+
+# Connect nodes with multiple connections with label a
+AddEdge graph1 n1 n1 a
+AddEdge graph1 n1 n2 a
+AddEdge graph1 n1 n3 a
+AddEdge graph1 n2 n1 a
+AddEdge graph1 n2 n2 a
+AddEdge graph1 n2 n3 a
+AddEdge graph1 n3 n1 a
+AddEdge graph1 n3 n2 a
+AddEdge graph1 n3 n3 a
+
+# Connect nodes with multiple connections with label c
+AddEdge graph1 n1 n1 c
+AddEdge graph1 n1 n2 c
+AddEdge graph1 n1 n3 c
+AddEdge graph1 n2 n1 c
+AddEdge graph1 n2 n2 c
+AddEdge graph1 n2 n3 c
+AddEdge graph1 n3 n1 c
+AddEdge graph1 n3 n2 c
+AddEdge graph1 n3 n3 c
+
+# Connect nodes with multiple connections with label b
+AddEdge graph1 n1 n1 b
+AddEdge graph1 n1 n2 b
+AddEdge graph1 n1 n3 b
+AddEdge graph1 n2 n1 b
+AddEdge graph1 n2 n2 b
+AddEdge graph1 n2 n3 b
+AddEdge graph1 n3 n1 b
+AddEdge graph1 n3 n2 b
+AddEdge graph1 n3 n3 b
+
+# list nodes of graph
+ListNodes graph1
+
+# list children of each node
+ListChildren graph1 n1
+ListChildren graph1 n2
+ListChildren graph1 n3

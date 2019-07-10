@@ -1,0 +1,14 @@
+# Tests various inputs for the marvel graph. Expected outputs were found by
+# browsing the marvel.tsv data and tallying counts of books with a dictionary.
+
+LoadGraph marvel marvel.tsv
+
+FindPath marvel HOFFMAN CAPTAIN_AMERICA
+
+FindPath marvel W'KABI LYNNE,_MONICA
+
+FindPath marvel CAPTAIN_AMERICA HAWK
+
+FindPath marvel HAWK HAWK
+
+FindPath marvel HAWK @#$

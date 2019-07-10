@@ -1,0 +1,115 @@
+CSE 331 Homework 4.  Answers to Written questions.
+Edit this file to supply your answers.
+
+Name: Bryan Yue
+
+Problem 0.
+
+(a) 
+Multiplication:
+r = p * q:
+   set r = new empty set
+   foreach term, tp, in p: 
+      foreach term, tq in q:
+         newTerm = tp * tq
+         newPoly = create an empty polynomial and insert newTerm
+         r = newPoly + r
+
+(b) 
+Negate:
+r = -p:
+   set r = new empty set
+   foreach term, tp, in p:
+      insert -tp into r
+
+Division:
+quotient = p / q:
+   set remainder = p by making a term-by-term copy of all terms in p to remainder
+   quotient = empty set
+   while (remainder is not empty and degree of remainder's leading term >= 
+         degree of q's leading term)
+      quotientTerm = (leading term of remainder) / (leading term of q)
+      quotientPolynomial = create an empty polynomial and insert quotientTerm 
+      remainder = remainder + (-(quotientPolynomial * q))
+      quotient = quotient + quotientPolynomial
+
+(c)
+p = x^3 + x - 1
+q = x + 1
+remainder = copy of p = x^3 + x - 1
+quotient = empty set
+while (remainder is not empty and degree of remainder's leading term >= 
+      degree of q's leading term)
+   Iteration 1: p = x^3 + x - 1, q = x + 1, remainder = x^3 + x - 1, quotient = empty
+       [quotientTerm = (leading term of remainder) / (leading term of q)] quotientTerm = x^2
+       [quotientPolynomial = create an empty polynomial and insert quotientTerm] quotientPolynomial = x^2
+       [remainder = remainder + (-(quotientPolynomial * q))] remainder =  -x^2 + x - 1
+       [quotient = quotient + quotientPolynomial] quotient = x^2
+   Iteration 2: p = x^3 + x - 1, q = x + 1, remainder = -x^2 + x - 1, quotient = x^2
+      [quotientTerm = (leading term of remainder) / (leading term of q)] quotientTerm = -x
+      [quotientPolynomial = create an empty polynomial and insert quotientTerm] quotientPolynomial = -x
+      [remainder = remainder + (-(quotientPolynomial * q))] remainder = 2x - 1
+      [quotient = quotient + quotientPolynomial] quotient = x^2 - x
+   Iteration 3: p = x^3 + x - 1, q = x + 1, remainder = 2x - 1, quotient = x^2 - x
+      [quotientTerm = (leading term of remainder) / (leading term of q)] quotientTerm = 2
+      [quotientPolynomial = create an empty polynomial and insert quotientTerm] quotientPolynomial = 2
+      [remainder = remainder + (-(quotientPolynomial * q))] remainder = -3
+      [quotient = quotient + quotientPolynomial] quotient = x^2 - x + 2
+We are done! quotient = x^2 - x + 2 and remainder = -3
+   
+Problem 1.
+
+(a)
+In checkRep() we need to remove checking that the ratio is reduced, so that an error is not thrown
+if the ratio is not reduced, which makes the code simpler and marginally faster to execute. In toString(), 
+we need to reduce the denominator and numerator to lowest term, which makes the code more complex and 
+the execution slower. In hashcode and equality, we need to make sure equivalent RatNums have the same
+hash code and are equal, which we can achieve by reducing the ratio, which makes the code more complicated.
+
+(b)
+These changes fail to meet the specifications of the RatNum class since they mutate the Ratnum,
+which is supposed to be immutable. The add, sub, mul, and div methods do not specify @modifies,
+so we are not allowed to change the RatNum fields. Thus the changes fail to meet both the class
+and method specifications.
+
+(c)
+We only call checkRep() at the end of the constructor since methods that violate the invariant
+before the end return a new RatNum which satisfies the invariant. The denominators and numerators
+calculated by methods such as add, sub, mul, and div may violate the invariant, but after
+constructing a new RatNum, the numerator and denominators are reduced, satisfying the invariant.
+We don't change RatNum fields in methods that do not return a new RatNum, so it is sufficient
+to just call checkRep() at the end of the constructor.
+
+Problem 2.
+
+(a)
+I only included checkRep() at the end of the constructor. In the methods that do not create a new
+RatNum, the RatNum fields are not modified so I did not need checkRep() for those methods. In the
+methods that created a new RatNum, checkRep() is called through the constructor.
+
+(b)
+In hashCode() and equals() we need to make 0's with different exponents return the 
+same hash code and be equal, which makes the code more complicated. In toString() we cannot print terms 
+with a 0 coefficient (unless the term is 0), which makes the code slightly more complicated 
+(we need to print terms with 0 coefficient as just 0), and we can simplify checkRep() to reflect the
+looser invariant (remove check for nonzero exponents for terms with 0 as coefficient so extra exceptions
+are not thrown). 
+
+(c)
+Since the NaN constant was defined with an exponent of 0, all methods that return NaN satisfy 
+the invariant, and we never modify NaN since it is returned immediately. Thus we just need to
+modify the checkRep() method by checking that NaN has an exponent of 0, which slightly increases
+the length of the code, and we need to change the constructor so that if NaN is passed with a non-
+zero power, the power is set to 0. 
+
+I prefer the representation with 0 coefficient having a 0 exponent, since this allows us to only 
+check for the invariant in the constructor. By enforcing this invariant, we do less work in
+hashcode(), equals, and toString(), which need to change if the expenonent is not 0. For the same 
+methods, if NaN did not have a zero coefficient, we would not have to change the methods to enforce
+the invariant, so it is more beneficial to use the 0 coefficient and power invariant.
+
+Problem 5.
+49*x^16-70*x^10-126*x^8+25*x^4+90*x^2+81
+49/17*x^17-70/11*x^11-14*x^9+5*x^5+30*x^3+81*x
+11760*x^14-6300*x^8-7056*x^6+300*x^2+180
+3057600*x^25-319200*x^19+635040*x^17-310800*x^13-997488*x^11-635040*x^9+9600*x^7+20520*x^5+6480*x^3

@@ -1,0 +1,17 @@
+# Tests that a graph can be created, and a node
+# can be added to the graph with an edge to itself. 
+
+# Create a graph
+created graph graph1
+
+# Add a node
+added node n1 to graph1
+
+# Connect node to itself
+added edge a from n1 to n1 in graph1
+
+# list nodes of graph
+graph1 contains: n1
+
+# list children of node
+the children of n1 in graph1 are: n1(a)
